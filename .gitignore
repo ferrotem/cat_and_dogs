@@ -1,0 +1,11 @@
+data/
+data_explorer.py
+data_explorer_old.py
+junk.py
+*.pt
+*.pdf
+notebooks/Untitled.ipynb
+notebooks/Tensorflow_Object_Detection.ipynb
+notebooks/EDA-2.ipynb
+__pycache__/
+notebooks/.ipynb_checkpoints/

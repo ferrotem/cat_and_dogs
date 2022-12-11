@@ -1,0 +1,92 @@
+########## TRAIN ######################
+AutoAnchor: 3.89 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset ✅
+Plotting labels to runs/train/siemence_cat_dogs2/labels.jpg... 
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to runs/train/siemence_cat_dogs2
+Starting training for 10 epochs...
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        0/9         0G    0.06982    0.02522    0.01992         23        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.653      0.569      0.624      0.298
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        1/9         0G    0.04736     0.0168   0.008399         27        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.639      0.738      0.727       0.39
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        2/9         0G    0.04178    0.01489   0.007198         27        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.665      0.833      0.798      0.481
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        3/9         0G    0.03702    0.01393   0.007066         29        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.822      0.835      0.876      0.565
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        4/9         0G    0.03404    0.01332   0.006941         28        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.903      0.883      0.904      0.607
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        5/9         0G    0.03111    0.01319   0.006063         26        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.943      0.942      0.973      0.692
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        6/9         0G    0.02845    0.01211   0.005054         30        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.935      0.936      0.975      0.735
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        7/9         0G    0.02663    0.01164   0.004005         18        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.958      0.967      0.986      0.771
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        8/9         0G    0.02394    0.01097   0.004021         29        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.977      0.982      0.989      0.794
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+
+        9/9         0G    0.02219    0.01057   0.002979         27        640: 1
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.974      0.982      0.991      0.813
+
+10 epochs completed in 2.124 hours.
+Optimizer stripped from runs/train/siemence_cat_dogs2/weights/last.pt, 14.4MB
+Optimizer stripped from runs/train/siemence_cat_dogs2/weights/best.pt, 14.4MB
+
+########## VAL ######################
+Validating runs/train/siemence_cat_dogs2/weights/best.pt...
+Fusing layers... 
+YOLOv5s summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+                 Class     Images  Instances          P          R      mAP50   
+                   all        295        295      0.974      0.982      0.991      0.813
+                   cat        295         99      0.985       0.99      0.994       0.86
+                   dog        295        196      0.964      0.974      0.988      0.765
+Results saved to runs/train/siemence_cat_dogs2
+
+
+
+
+
+
+
+
+########## TEST ######################
+Fusing layers... 
+YOLOv5s summary: 157 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+test: Scanning /home/temir/Documents/Kaggle/Siemense/data/test.cache... 738 imag
+                 Class     Images  Instances          P          R      mAP50   
+                   all        738        738      0.988      0.983       0.99      0.842
+                   cat        738        237      0.996      0.987      0.993      0.883
+                   dog        738        501       0.98      0.978      0.987      0.801
+Speed: 0.7ms pre-process, 76.8ms inference, 0.4ms NMS per image at shape (32, 3, 640, 640)
+Results saved to runs/val/exp
+738 labels saved to runs/val/exp/labels
+
