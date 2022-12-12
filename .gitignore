@@ -2,6 +2,7 @@ data/
 
 *.pt
 *.pdf
+!Object Detection Task- Temirlan.pdf
 notebooks/Untitled.ipynb
 notebooks/Tensorflow_Object_Detection.ipynb
 notebooks/EDA-2.ipynb
