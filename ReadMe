@@ -1,0 +1,29 @@
+Чтобы запустить нужно будет:
+    0. Скопировать датасет на папку data
+    1. Установить все библиотеки с environment.yml
+    2. Склонировать yolov5 к внутрь папки git clone https://github.com/ultralytics/yolov5
+    3. Cоздать папку runs и внутр нее распокавать папки detect, train, val.
+        Сдесь находятся TensorBord логи train и веса тренированного модели yolov5/runs/train/siemense_cat_dogs2
+        Сдесь находятся результаты test yolov5/runs/val/
+
+    4. Далее можете смореть на Jupyter notebook: Notebooks/Cat_and_Dog_Detections
+    5. Решение Доп. Задачи находится  Notebooks/DeepImageSearch.ipynb
+
+Структура папки
+Siemense/
+    - data/
+        - images/
+        - annotations/
+        ...
+    - notebooks/
+        - Cat_and_Dog_Detections.ipynb
+        - DeepImageSearch.ipynb
+    - yolov5/
+        - runs/
+            - detect
+            - train
+            - val
+
+    environment.yml
+    ReadMe
+    results.txt
